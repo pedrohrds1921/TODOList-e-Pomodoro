@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List And pomodoro</title>
+</head>
+<body>
+    <div class="app">
+        <section class="pomodoro">
+            <div class="cauntDown">
+               <div class="timer">
+                <div id="display"class="txt-48">20:00</div>
+               </div>
+               <div class="controls">
+                <div class=" controls-btn btn-plus">
+                    <img src="assets/btn-plus.svg" alt="" srcset="">
+                </div>
+                <div class=" controls-btn btn-stop hide">
+                    <img src="assets/btn-stop.svg" alt="" srcset="">
+                </div>
+               
+                <div class=" controls-btn">
+                    <div class="btn-play"></div>
+                    <div class="btn-pause hide"></div>
+                </div> 
+               
+            </div>
+            </div>
+            
+          
+        </Section>
+    
+        <Section class="Todo">
+            <h1>Todo List</h1>
+            <form>
+                <input type="text"id="tasks" placeholder="Inserir tarefas">
+                <button class="btn"><p>Adicionar +</p></button>
+            </form>
+            <ul>
+               
+            </ul>
+        </Section>
+        <div  class="audio-play "></div>
+            <div class="audio-mute hide"></div>
+            <div id="player" class="hide">
+        </div>
+    </div>
+   <div class="modal hide">
+    <div class="modal-Minuts hide">
+        <h1>Insira o tempo em minutos </h1>
+        <div class="modal-input">
+            <input id="modalID" type="number" min="0" max="60" placeholder="Max 60 minutos">
+            <button id="modalADD" class="btn"><p>Adicionar +</p></button>
+        </div>
+        <p id="modalBTN">Fechar</p>
+    </div>
+   </div>
+    
+    <script src="./main.js"type="module"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
